@@ -47,10 +47,21 @@ namespace Vaccination
                     IdCharge = ((Charge)cmbCharge.SelectedItem).Id
                 };
 
-                db.Add(citizen);
-                db.SaveChanges();
-                MessageBox.Show("Ciudadano registrado!!!", "Sistema de registro - Registros", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
+                bool Very = txtDui.Text.Length == 0 || txtName.Text.Length == 0 || txtAddres.Text.Length == 0 || txtAge.Text.Length == 0 || txtEmail.Text.Length == 0 ;
+                if (Very )
+                {
+                    MessageBox.Show("Debe llenar los campos Obligatorios", "Sistema de registro - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    db.Add(citizen);
+                    db.SaveChanges();
+                    MessageBox.Show("Ciudadano registrado!!!", "Sistema de registro - Registros", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                    
+
+                }
+
                 
         }
 
