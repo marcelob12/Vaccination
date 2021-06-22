@@ -43,6 +43,9 @@ namespace Vaccination
             {
                 MessageBox.Show("Bienvenido " + txtUser.Text, "Inicio de sesion - Bienvenido/a", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+                FrmCitizen form = new FrmCitizen();
+                form.ShowDialog();
+                this.Close();
             }
 
 

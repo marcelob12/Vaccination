@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/.idea.Vaccination.iml
+/contentModel.xml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\Users\marce\OneDrive\Documents\Workspaces\POO\proyecto\Vaccination\.idea\.idea.Vaccination\.idea/dataSources/
+/dataSources.local.xml
